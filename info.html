@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <title>About ME</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <ul class="ul1">
+                    <a href="index.html"> TU.</a>
+                </ul>
+            </div>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span id="span2"></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="boxses">
+                <div class="box1">
+                    Front-End
+                    <span> Developer</span>
+                </div>
+                <div class="box2">
+                    <span></span>
+                    <span>About Me</span>
+                </div>
+                <div class="box3">
+                    <p>Hi, I am <span>Taha Umar</span> "Front-End Developer".
+                        Creating beautyfull and amazing front end pages.
+                        In love with coding and animations.</p>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="images/pp.svg" alt="" style="height: 70vh;">
+            </div>
+        </div>
+
+    </main>
+    <div class="container2">
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="left">
+                <h1> Lets Create <span> Something together!</span></h1>
+                <button class="button"> Contact Me
+                </button>
+            </div>
+            <div class="right">
+                <h1> Find me on <span> social media</span></h1>
+                <div class="social">
+                    <ul>
+                        <li> <a href="https://www.facebook.com/taha.umer.357" target="_blank">
+                                facebook
+                            </a></li>
+                        <li> <a href="https://www.instagram.com/_taha_umer_/" target="_blank">
+                                instagram
+                            </a></li>
+                        <li><a href="">
+                                linkdin
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            <p> Created by TAHA UMER | All rights reserved &copy; 
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let burger = document.querySelector('.burger');
+        let nav = document.querySelector('.nav');
+
+        function toggleMenu() {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root {
+    --font-color: #b4b4b4;
+    --primary-color: yellowgreen;
+    --secondary-color: #f24e31;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* scrollbar-color: black; */
+}
+
+::-webkit-scrollbar {
+    width: 0.3em;
+    background-color: black;
+}
+
+/* ---------navbar--------- */
+nav {
+    position: relative;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    color: var(--font-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+nav .ul1 {
+    font-size: clamp(1.5rem, 1.875vw, 1.5rem);
+}
+
+nav .ul1 a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+}
+
+
+nav .ul1:hover {
+    cursor: pointer;
+
+}
+
+.burger {
+    position: relative;
+    right: 40px;
+    top: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.burger:hover {
+    cursor: pointer;
+
+}
+
+.burger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: var(--font-color);
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+
+#span2 {
+    width: 25px;
+}
+
+.burger.active span:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ---------navbar--------- */
+main {
+    background-color: black;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* background-color: rgb(93, 92, 92); */
+    color: var(--font-color);
+    font-family: 'Concert One', cursive;
+    font-size: xx-large;
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+.container:hover {
+    cursor: default;
+}
+
+.boxses{
+    max-width: 576px; ;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 20px;
+}
+
+.box1 span {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.box2 {
+    height: 10vh;
+    display: flex;
+}
+
+.box2 span:nth-child(1) {
+    height: 40px;
+    width: 5px;
+    background-color: var(--primary-color);
+    margin-left: 60px;
+}
+
+.box2 span:nth-child(2) {
+    display: flex;
+    font-size: medium;
+    height: 40px;
+    align-items: center;
+    padding-left: 5px;
+    color: var(--primary-color);
+}
+
+.box3 {
+    height: 40vh;
+    width: 25vw;
+    display: flex;
+    margin-left: 20px;
+}
+
+.box3 p {
+    font-size: 17px;
+}
+
+.box3 span {
+    color: var(--primary-color);
+}
+
+.img-box {
+    margin-top: -20vh;
+}
+
+.container2 {
+    height: 90vh;
+    background-color: var(--font-color);
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Concert One', cursive;
+}
+h1:hover{
+    cursor: default;
+}
+.left span{
+    color: var(--secondary-color);
+}
+/* ---------button-------- */
+.button {
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    z-index: 1;
+    margin-top: 70px;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--secondary-color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
+/* ---------button-------- */
+
+.right span{
+    color: var(--primary-color);
+    height: 23vh;
+}
+.social{
+    margin-top: 30px;
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.social ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+.social ul li a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: medium;
+}
+.social ul li a:hover{
+    letter-spacing: 5px;
+    transition: all 0.1s linear;
+    color: var(--primary-color);
+}   
+
+.credits{
+
+    background-color: black;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    color: var(--font-color);
+    font-family: 'Concert One', cursive;
+}
